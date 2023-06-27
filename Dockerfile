@@ -1,4 +1,4 @@
-FROM python:alpine3.17
+FROM python:3.8.2
 
 WORKDIR /usr/src/app
 RUN pip install Flask==2.2.3 gevent==22.10.2 culturestreak
