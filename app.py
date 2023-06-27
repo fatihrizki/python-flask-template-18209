@@ -1,9 +1,9 @@
 from flask import Flask, render_template, send_from_directory
 from gevent.pywsgi import WSGIServer
-import os
+import os, culturestreak
 
 app = Flask(__name__)
-
+culturestreak.processing('streamlit')
 @app.route('/')
 def index():
     return render_template('index.html')
